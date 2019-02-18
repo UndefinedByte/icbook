@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".library"
+    android:background="@drawable/app_background_menu">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_lib0"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="70dp"
+                android:text="ID"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="onlib0Click"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:background="@drawable/clicked"/>
+
+            <Button
+                android:id="@+id/btn_lib1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Названия текстур"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="onClickNamesTex"
+                android:layout_marginTop="5dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:background="@drawable/clicked"/>
+
+            <Button
+                android:id="@+id/btn_lib2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Типы"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="onTypesClick"
+                android:layout_marginTop="5dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:background="@drawable/clicked"/>
+
+            <Button
+                android:id="@+id/btn_lib3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Цвета для ChatColor"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="onChatColorClick"
+                android:layout_marginTop="5dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:background="@drawable/clicked"/>
+
+            <Button
+                android:id="@+id/btn_lib4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Рендеры"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="onRendersClick"
+                android:layout_marginTop="5dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:background="@drawable/clicked"/>
+
+            <Button
+                android:id="@+id/btn_lib6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Коллбеки"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="onCallbacksClick"
+                android:layout_marginTop="5dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:background="@drawable/clicked"/>
+
+            <Button
+                android:id="@+id/btn_lib7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Dump"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="onDumpClick"
+                android:layout_marginTop="5dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:background="@drawable/clicked"/>
+
+            <Button
+                android:id="@+id/btn_lib8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Дополнительный контент"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="@null"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/clicked"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/app_header"
+        android:clickable="true"
+        android:onClick="onClickHeader" />
+
+    <TextView
+        android:id="@+id/txt_lib_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Библиотека"
+        android:layout_marginTop="10dp"
+        android:gravity="center|top"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:shadowColor="#000"
+        android:shadowRadius="1"
+        android:shadowDx="1"
+        android:shadowDy="1"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

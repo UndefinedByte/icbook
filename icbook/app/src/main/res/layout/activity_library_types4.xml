@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".library_types4"
+    android:background="@drawable/app_background_lessons">
+
+    <ScrollView
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textIsSelectable="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="70dp"
+                android:text=" Native.Dimension.END - number(2) //Эндер-мир\n Native.Dimension.NETHER - number(1) //Ад\n Native.Dimension.NORMAL - number(0) //Обычный мир"
+                android:textColor="@android:color/background_light"
+                android:textSize="17.5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/app_header"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/txt_lib_renders0_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Типы измерений"
+        android:layout_marginTop="10dp"
+        android:gravity="center|top"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:shadowColor="#000"
+        android:shadowRadius="1"
+        android:shadowDx="1"
+        android:shadowDy="1"/>
+
+</android.support.constraint.ConstraintLayout>

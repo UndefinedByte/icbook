@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".library_id1"
+    android:background="@drawable/app_background_lessons">
+
+
+    <ScrollView
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textIsSelectable="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="70dp"
+                android:text=" Native.PotionEffect.absorption - number(22) //Поглощение\n Native.PotionEffect.blindness - number(15) //Слепота\n Native.PotionEffect.confusion - number(9) //Тошнота\n Native.PotionEffect.damageBoost - number(5) //Сила\n Native.PotionEffect.damageResistance - number(11) //Сопротивление к урону\n Native.PotionEffect.digSlowdown - number(4) //Утомление\n Native.PotionEffect.digSpeed - number(3) //Ускорение\n Native.PotionEffect.fireResistance - number(12) //Огнестойкость\n Native.PotionEffect.harm - number(7) //Моментальный урон\n Native.PotionEffect.heal - number(6) //Мгновенное лечение\n Native.PotionEffect.healthBoost - number(21) //Повышение здоровья\n Native.PotionEffect.hunger - number(17) //Голод\n Native.PotionEffect.invisibility - number(14) //Невидимость\n Native.PotionEffect.jump - number(8) //Прыгучесть\n Native.PotionEffect.movementSlowdown - number(2) //Медлительность\n Native.PotionEffect.movementSpeed - number(1) //Скорость\n Native.PotionEffect.nightVision - number(16) //Ночное зрение\n Native.PotionEffect.poison - number(19) //Отравление\n Native.PotionEffect.regeneration - number(10) //Восстановление\n Native.PotionEffect.saturation - number(23) //Сытость\n Native.PotionEffect.waterBreathing - number(13) //Дыхание под водой\n Native.PotionEffect.weakness - number(18) //Слабость/n Native.PotionEffect.wither - number(20) //Иссушение"
+                android:textColor="#fff"
+                android:textSize="17.5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/app_header"
+        android:clickable="true"
+        android:onClick="onClickHeader"/>
+
+    <TextView
+        android:id="@+id/txt_lib_id1_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="ID эффектов"
+        android:layout_marginTop="10dp"
+        android:gravity="center|top"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:shadowColor="#000"
+        android:shadowRadius="1"
+        android:shadowDx="1"
+        android:shadowDy="1"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".library_types2"
+    android:background="@drawable/app_background_lessons">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textIsSelectable="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="70dp"
+                android:text="Native.ParticleType.angryVillager - number(30) //Злой житель \nNative.ParticleType.bubble - number(1) //Пузырьки \nNative.ParticleType.carrotboost - string(carrotboost) //Морковь(при ускорении на свинье) \nNative.ParticleType.cloud - number(4) //Пар \nNative.ParticleType.crit - number(2) //Критический урон \nNative.ParticleType.dripLava - number(22) //Капающая лава \nNative.ParticleType.dripWater - number(21) //Капающая вода \nNative.ParticleType.enchantmenttable - number(32) //Чары \nNative.ParticleType.fallingDust - number(23) //Падающая пыль \nNative.ParticleType.flame - number(6) //Огонь \nNative.ParticleType.happyVillager - number(31) //Счастивый житель \nNative.ParticleType.heart - number(15) //Сердечки \nNative.ParticleType.hugeexplosion - number(13) //Огромный взрыв \nNative.ParticleType.hugeexplosionSeed - number(12) //Огромный взрывной источник \nNative.ParticleType.ink - number(27) //Чернила \nNative.ParticleType.itemBreak - number(10) //Ломание предмета \nNative.ParticleType.largeexplode - number(5) //Большой взрыв \nNative.ParticleType.lava - number(7) //Брызги лавы \nNative.ParticleType.mobFlame - number(14) //Огонь \nNative.ParticleType.note - number(34) //Звук \nNative.ParticleType.portal - number(18) //Портал \nNative.ParticleType.rainSplash - number(29) //Брызги дождя \nNative.ParticleType.redstone - number(9) //Редстоун \nNative.ParticleType.slime - number(28) //Слизь \nNative.ParticleType.smoke - number(3) //Дым  \nNative.ParticleType.smoke2 - number(8) //Дым 2 \nNative.ParticleType.snowballpoof - number(11) //Снежок \nNative.ParticleType.spell - number(24) //Эффект \nNative.ParticleType.spell2 - number(25) //Эффект 2 \nNative.ParticleType.spell3 - number(26) //Эффект 3 \nNative.ParticleType.splash - number(19) //Брызг \nNative.ParticleType.suspendedTown - number(17) //Синий квадрат \nNative.ParticleType.terrain - number(16) //Земля \nNative.ParticleType.waterWake - number(20) //Вода \nNative.ParticleType.witchspell - string(witchspell)  //Эффект ведьмы"
+                android:textColor="@android:color/background_light"
+                android:textSize="17.5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/app_header"
+        android:clickable="true"
+        android:onClick="onClickHeader"/>
+
+    <TextView
+        android:id="@+id/txt_lib_types2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Типы частиц"
+        android:layout_marginTop="10dp"
+        android:gravity="center|top"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:shadowColor="#000"
+        android:shadowRadius="1"
+        android:shadowDx="1"
+        android:shadowDy="1"/>
+
+</android.support.constraint.ConstraintLayout>

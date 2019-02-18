@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".library_callbacks"
+    android:background="@drawable/app_background_lessons">
+
+    <ScrollView
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textIsSelectable="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="70dp"
+                android:text=" ReadSaves - чтение всех сохранений\n WriteSaves - запись всех сохранений\n\nGenerateNetherChunk(chunkX, chunkZ)\n GenerateEndChunk(chunkX, chunkZ)\n GenerateChunk(chunkX, chunkZ)\n GenerateChunkUndeground(chunkX, chunkZ)\n tick - тик\n LevelSelected - начало загрузки мира\n LevelSelected\nLevelLoaded - конец загрузки мира\n LevelLeft - выход из мира\n\n DestroyBlock(coords, block, player) - уничтожение блока(coords.relative, coords.side)\n DestroyBlockStart(coords, block, player) - начало уничтожения блока\n DestroyBlockContinue(coords, block, progress, player) - продолжение уничтожения блока 3 в тик\nCustomBlockTessellation(render, coords, block, someBool) - вызывается при рендере блока\nExplosion(coords, params) - взрыв params.entity, params.power, params.onFire\n RedstoneSignal(coords, params, block) - params.power, params.booleanPar\n NativeCommand(str) - команда\n ClientChat (str) - сообщение\nServerChat(str)\nItemUse(coords, item, block) - coords.relative, coords.side\n\n PlayerAttack(player, victim) - атака игрока\n EntityAdded(entity) - добаление моба\n EntityRemoved(entity) - удаление моба\n EntityDeath(entity) - смерть\n EntityHurt(attacker, victim, damage) - получение урона мобом\n\n ProjectileHit(projectile, item, target) - (item.id, item.count, item.data), (target.x, target.y, target.z, if block hit - target.coords, if entity hit - target.entity)\n ProjectileHitBlock(projectile, coords, block)\n ProjectileHitEntity(projectile, entity)\n\n FoodEaten(heal, satRatio)\n NativeGuiChanged(screenName)\n\n ExpAdd(amount, player)\n ExpLevelAdd(levelAmount, player)\n\n PreBlocksDefined - перед добавлением блоков\n BlocksDefined - добаление блоков\n\nPreLoaded - перед окончательной загрузкой\n APILoaded - для загрузки API модов\n ModsLoaded - еще один\n PostLoaded - окончательная загрузка всего\n\nEntityInteract\n\nItemDispensed(coords, item)\nItemIconOverride(item)\nItemNameOverride(item, oldName, newName)\nItemUsingComplete(item)\nItemUsingReleased(item, someInt)\nItemUseNoTarget(item)\n\n LevelPreLoaded\n DimensionLoaded(dimensionId)\n"
+                android:textColor="@android:color/background_light"
+                android:textSize="17.5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/app_header"
+        android:clickable="true"
+        android:onClick="onClickHeader"/>
+
+    <TextView
+        android:id="@+id/txt_lib_call_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Коллбеки"
+        android:layout_marginTop="10dp"
+        android:gravity="center|top"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:shadowColor="#000"
+        android:shadowRadius="1"
+        android:shadowDx="1"
+        android:shadowDy="1"/>
+
+</android.support.constraint.ConstraintLayout>

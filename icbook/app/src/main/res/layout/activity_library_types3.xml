@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".library_types3"
+    android:background="@drawable/app_background_lessons">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textIsSelectable="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="70dp"
+                android:text="Native.EntityType.ARROW - number(80) //Стрела \nNative.EntityType.BAT - number(19) //Летучая мышь \nNative.EntityType.BLAZE - number(43) //Ифрит \nNative.EntityType.BOAT - number(90) //Лодка \nNative.EntityType.CAVE_SPIDER - number(40) //Пещерный паук \nNative.EntityType.CHICKEN - number(10) //Курица \nNative.EntityType.COW - number(11) //Корова \nNative.EntityType.CREEPER - number(33) //Крипер \nNative.EntityType.EGG - number(82) //Яйцо \nNative.EntityType.ENDERMAN - number(38) //Эндермен \nNative.EntityType.EXPERIENCE_ORB - number(69) //Шарик опыта \nNative.EntityType.EXPERIENCE_POTION - number(68) //Пузырек опыта \nNative.EntityType.FALLING_BLOCK - number(66) //Падающий блок \nNative.EntityType.FIREBALL - number(85) //Огненый шар \nNative.EntityType.FISHING_HOOK - number(77) //Поплавок \nNative.EntityType.GHAST - number(41) //Гаст \nNative.EntityType.IRON_GOLEM - number(20) //Железный голем \nNative.EntityType.ITEM - number(64) //Предмет \nNative.EntityType.LAVA_SLIME - number(42) //Лавовый слизень \nNative.EntityType.LIGHTNING_BOLT - number(93) //Молния \nNative.EntityType.MINECART - number(84) //Вагонетка \nNative.EntityType.MUSHROOM_COW - number(16) //Корова-мухомор \nNative.EntityType.OCELOT - number(22) //Оцелот \nNative.EntityType.PAINTING - number(83) //Картина \nNative.EntityType.PIG - number(12) //Свинья \nNative.EntityType.PIG_ZOMBIE - number(36) //Свинозомби \nNative.EntityType.PLAYER - number(63) //Игрок \nNative.EntityType.POLAR_BEAR - number(28) //Белый медведь \nNative.EntityType.PRIMED_TNT - number(65) //Активированный ТНТ \nNative.EntityType.RABBIT - number(18) //Кролик \nNative.EntityType.SHEEP - number(13) //Овца \nNative.EntityType.SILVERFISH - number(39) //Чешуйница \nNative.EntityType.SKELETON - number(34) //Скелет \nNative.EntityType.SLIME - number(37) //Слизень \nNative.EntityType.SMALL_FIREBALL - number(94) //Малый огненный шар \nNative.EntityType.SNOWBALL - number(81) //Снежок \nNative.EntityType.SNOW_GOLEM - number(21) //Снеговик(Снежный голем) \nNative.EntityType.SPIDER - number(35) //Паук \nNative.EntityType.SQUID - number(17) //Спрут \nNative.EntityType.THROWN_POTION - number(86) //Пузырек с зельем \nNative.EntityType.VILLAGER - number(15) //Житель \nNative.EntityType.WOLF - number(14) //Волк \nNative.EntityType.ZOMBIE - number(32) //Зомби \nNative.EntityType.ZOMBIE_VILLAGER - number(44) //Зомби житель \n"
+                android:textColor="@android:color/background_light"
+                android:textSize="17.5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/app_header"
+        android:clickable="true"
+        android:onClick="onClickHeader" />
+
+    <TextView
+        android:id="@+id/txt_lib_types3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Типы мобов"
+        android:layout_marginTop="10dp"
+        android:gravity="center|top"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:shadowColor="#000"
+        android:shadowRadius="1"
+        android:shadowDx="1"
+        android:shadowDy="1"/>
+
+</android.support.constraint.ConstraintLayout>

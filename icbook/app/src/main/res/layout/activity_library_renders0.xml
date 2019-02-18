@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".library_renders0"
+    android:background="@drawable/app_background_lessons">
+
+    <ScrollView
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textIsSelectable="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="70dp"
+                android:text=" Native.MobRenderType.arrow - number(25) //Стрела\n Native.MobRenderType.bat - number(10) //Летучая мышь\n Native.MobRenderType.blaze - number(18) //Ифрит\n Native.MobRenderType.boat - number(35) //Лодка\n Native.MobRenderType.camera - number(48) //Камера\n Native.MobRenderType.chicken - number(5) //Курица\n Native.MobRenderType.cow - number(6) //Корова\n Native.MobRenderType.creeper - number(22) //Крипер\n Native.MobRenderType.egg - number(28) //Яйцо\n Native.MobRenderType.enderman - number(24) //Эндермен\n Native.MobRenderType.expPotion - number(45) //Пузырек опыта\n Native.MobRenderType.experienceOrb - number(40) //Шарик опыта\n Native.MobRenderType.fallingTile - number(33) //Падающий блок\n Native.MobRenderType.fireball - number(37) //Фаербол\n Native.MobRenderType.fishHook - number(26) //Поплавок\n Native.MobRenderType.ghast - number(17) //Гаст\n Native.MobRenderType.human - number(3) //Игрок\n Native.MobRenderType.ironGolem - number(42) //Железный голем\n Native.MobRenderType.item - number(4) //Предмет\n Native.MobRenderType.lavaSlime - number(16) //Лавовый слизень\n Native.MobRenderType.lightningBolt - number(41) //Молния\n Native.MobRenderType.minecart - number(34) //Вагонетка\n Native.MobRenderType.mushroomCow - number(7) //Корова-мухомор\n Native.MobRenderType.ocelot - number(43) //Оцелот\n Native.MobRenderType.painting - number(32) //Картина\n Native.MobRenderType.pig - number(8) //Свинка\n Native.MobRenderType.player - number(27) //Игрок\n Native.MobRenderType.rabbit - number(46) //Кролик\n Native.MobRenderType.sheep - number(9) //Овца\n Native.MobRenderType.silverfish - number(21) //Чещуйница\n Native.MobRenderType.skeleton - number(19) //Скелет\n Native.MobRenderType.slime - number(23) //Слизень\n Native.MobRenderType.smallFireball - number(38) //Малый огненный шар\n Native.MobRenderType.snowGolem - number(44) //Снеговик(Снежный голем)\n Native.MobRenderType.snowball - number(29) //Снежок\n Native.MobRenderType.spider - number(20) //Паук\n Native.MobRenderType.squid - number(36) //Спрут\n Native.MobRenderType.thrownPotion - number(31) //Пузырек с зельем\n Native.MobRenderType.tnt - number(2) //Активированный динамит\n Native.MobRenderType.unknownItem - number(30) //Неизвестный предмет(невидим)\n Native.MobRenderType.villager - number(12) //Житель\n Native.MobRenderType.villagerZombie - number(39) //Зомби житель\n Native.MobRenderType.witch - number(47) //Ведьма\n Native.MobRenderType.wolf - number(11) //Волк\n Native.MobRenderType.zombie - number(14) //Зомби\n Native.MobRenderType.zombiePigman - number(15) //Свинозомби"
+                android:textColor="#fff"
+                android:textSize="17.5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/app_header"
+        android:clickable="true"
+        android:onClick="onClickHeader"/>
+
+    <TextView
+        android:id="@+id/txt_lib_id1_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Рендеры мобов"
+        android:layout_marginTop="10dp"
+        android:gravity="center|top"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:shadowColor="#000"
+        android:shadowRadius="1"
+        android:shadowDx="1"
+        android:shadowDy="1"/>
+
+</android.support.constraint.ConstraintLayout>

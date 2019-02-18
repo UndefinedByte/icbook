@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".library_types5"
+    android:background="@drawable/app_background_lessons">
+
+    <ScrollView
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textIsSelectable="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="70dp"
+                android:text=" Native.BlockSide.DOWN - number(0) //Нижняя сторона блока\n Native.BlockSide.EAST - number(5) //Восточная сторона блока\n Native.BlockSide.NORTH - number(2) //Северная сторона блока\n Native.BlockSide.SOUTH - number(3) //Южная сторона блока\n Native.BlockSide.UP - number(1) //Верхняя сторона блока\n Native.BlockSide.WEST - number(4) //Западная сторона блока"
+                android:textColor="@android:color/background_light"
+                android:textSize="17.5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/app_header"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/txt_lib_renders1_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Типы сторон блоков"
+        android:layout_marginTop="10dp"
+        android:gravity="center|top"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:shadowColor="#000"
+        android:shadowRadius="1"
+        android:shadowDx="1"
+        android:shadowDy="1"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".library_types"
+    android:background="@drawable/app_background_menu">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_type0"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="70dp"
+                android:text="Типы брони"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="onClickType0"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:background="@drawable/clicked"/>
+
+            <Button
+                android:id="@+id/btn_type1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Типы предметов"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="onClickType1"
+                android:layout_marginTop="5dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:background="@drawable/clicked"/>
+
+            <Button
+                android:id="@+id/btn_type2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Типы частиц"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="onClickType2"
+                android:layout_marginTop="5dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:background="@drawable/clicked"/>
+
+            <Button
+                android:id="@+id/btn_type3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Типы мобов"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="onClickType3"
+                android:layout_marginTop="5dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:background="@drawable/clicked"/>
+
+            <Button
+                android:id="@+id/btn_type4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Типы измерений"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="onClickType4"
+                android:layout_marginTop="5dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:background="@drawable/clicked"/>
+
+            <Button
+                android:id="@+id/btn_type5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Типы сторон блоков"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="onClickType5"
+                android:layout_marginTop="5dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:background="@drawable/clicked"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/app_header"
+        android:clickable="true"
+        android:onClick="onClickHeader"/>
+
+    <TextView
+        android:id="@+id/txt_lib_types_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Типы"
+        android:layout_marginTop="10dp"
+        android:gravity="center|top"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:shadowColor="#000"
+        android:shadowRadius="1"
+        android:shadowDx="1"
+        android:shadowDy="1"/>
+
+</android.support.constraint.ConstraintLayout>

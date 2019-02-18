@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_auth"
+    android:background="@drawable/app_background_lessons">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_auth_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Автор"
+                android:gravity="center|top"
+                android:textColor="@android:color/background_light"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:shadowColor="#000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="4"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Автор приложения -"
+                android:textColor="@android:color/background_light"
+                android:textSize="25sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Егор ''Event_'' Мороз"
+                android:textColor="@android:color/background_light"
+                android:textSize="25sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="При поддержке:"
+                android:textColor="@android:color/background_light"
+                android:textSize="25sp"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="onClickRZ"
+                android:text=" - Region[0] Company,"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="22.5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text=" - #Mineprogramming"
+                android:textColor="@android:color/background_light"
+                android:textSize="22.5dp"
+                android:clickable="true"
+                android:onClick="onClickMP"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Благодарность:"
+                android:textColor="@android:color/background_light"
+                android:textSize="25sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text=" - Захар ''Cookie'' Харитонович,"
+                android:textColor="@android:color/background_light"
+                android:textSize="22.5dp"
+                android:clickable="true"
+                android:onClick="onClickZH"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text=" - Николай ''Kostelom'' Митин,"
+                android:textColor="@android:color/background_light"
+                android:textSize="22.5dp"
+                android:clickable="true"
+                android:onClick="onClickNM"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text=" - Рамазан Донкоев,"
+                android:textColor="@android:color/background_light"
+                android:textSize="22.5dp"
+                android:clickable="true"
+                android:onClick="onClickRD"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text=" - Виталий Павлюковец,"
+                android:textColor="@android:color/background_light"
+                android:textSize="22.5dp"
+                android:clickable="true"
+                android:onClick="onClickVP"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text=" - Саша Салеев,"
+                android:textColor="@android:color/background_light"
+                android:textSize="22.5dp"
+                android:clickable="true"
+                android:onClick="onClickSS"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text=" - Михаил Шуньков,"
+                android:textColor="@android:color/background_light"
+                android:textSize="22.5dp"
+                android:clickable="true"
+                android:onClick="onClickMS"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text=" - Дмитрий Медведев"
+                android:textColor="@android:color/background_light"
+                android:textSize="22.5dp"
+                android:clickable="true"
+                android:onClick="onClickDM"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Если Вы обнаружили какие-то баги, ошибки в приложении или в тексте, то связаться со мной можно через:"
+                android:textColor="@android:color/background_light"
+                android:textSize="22.5dp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btn_auth"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:linksClickable="true"
+                android:onClick="onClickEM"
+                android:text="ВКонтакте"
+                android:textAllCaps="false"
+                android:textSize="27.5sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/clicked"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

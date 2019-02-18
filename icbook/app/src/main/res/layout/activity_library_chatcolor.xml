@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".library_chatcolor"
+    android:background="@drawable/app_background_lessons">
+
+    <ScrollView
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textIsSelectable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="70dp"
+                android:text=" Изменение цвета: \n §0 - Черный \n §1 - Королевский синий \n §2 - Зеленый \n §4 - Красный \n §5 - Фиолетовый \n §6 - Оранжевый \n §7 - Светло-серый \n §8 - Темно-серый \n §9 - Синий \n §a - Салатный \n §b - Лазурный \n §c - Бледно-красный \n §d - Розовый \n §e - Бежевый \n §f - Белый \n"
+                android:textColor="#fff"
+                android:textSize="17.5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textIsSelectable="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text=" Изменение шрифта: \n §r - Отмена форматирования \n §l - Жирный \n §o - Курсивный \n §n - Подчеркнутый \n §m - Зачеркнутый \n §k - Вывод рандомных букв и символов \n  "
+                android:textColor="#fff"
+                android:textSize="17.5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/app_header"
+        android:clickable="true"
+        android:onClick="onClickHeader" />
+
+    <TextView
+        android:id="@+id/txt_lib_chatcolor_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Цвета для ChatColor"
+        android:layout_marginTop="10dp"
+        android:gravity="center|top"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:shadowColor="#000"
+        android:shadowRadius="1"
+        android:shadowDx="1"
+        android:shadowDy="1"/>
+
+</android.support.constraint.ConstraintLayout>
